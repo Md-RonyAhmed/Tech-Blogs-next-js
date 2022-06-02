@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <>
@@ -26,27 +27,43 @@ const Navbar = () => {
               tabIndex="0"
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Home</a>
-              </li>
-              <li>
-                <a>Blogs</a>
-              </li>
-              <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
+              <Link href="/">
+                <li>
+                  <a>Home</a>
+                </li>
+              </Link>
+              <Link href="/blogs">
+                <li>
+                  <a>Blogs</a>
+                </li>
+              </Link>
+              <Link href="/about">
+                <li>
+                  <a>About</a>
+                </li>
+              </Link>
+              <Link href="/">
+                <li>
+                  <a>Contact</a>
+                </li>
+              </Link>
             </ul>
           </div>
           <div className=" btn btn-ghost text-2xl">Tech Blogs</div>
         </div>
         <div className="navbar-start hidden lg:block md:block">
-          <a className="btn btn-ghost normal-case text-xl">Home</a>
-          <a className="btn btn-ghost normal-case text-xl">Blogs</a>
-          <a className="btn btn-ghost normal-case text-xl">About</a>
-          <a className="btn btn-ghost normal-case text-xl">Contact</a>
+          <Link href="/">
+            <a className="btn btn-ghost normal-case text-xl">Home</a>
+          </Link>
+          <Link href="/blogs">
+            <a className="btn btn-ghost normal-case text-xl">Blogs</a>
+          </Link>
+          <Link href="/about">
+            <a className="btn btn-ghost normal-case text-xl">About</a>
+          </Link>
+          <Link href="/contact">
+            <a className="btn btn-ghost normal-case text-xl">Contact</a>
+          </Link>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
