@@ -51,15 +51,15 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
-          <div className=" btn btn-ghost text-2xl">Tech Blogs</div>
+          <div className="text-3xl text-green-800 font-bold">Tech Blogs</div>
         </div>
         <div className="navbar-start hidden lg:block md:block">
           <Link href="/">
             <a
               className={
                 router.pathname == "/"
-                  ? `text-green-600 btn btn-ghost btn-outline normal-case text-xl`
-                  : "btn btn-ghost normal-case text-xl"
+                  ? `text-green-600 btn btn-ghost btn-outline normal-case text-lg`
+                  : "btn btn-ghost normal-case text-lg"
               }
             >
               Home
