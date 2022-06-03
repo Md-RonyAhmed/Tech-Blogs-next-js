@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Navbar = () => {
+  const router = useRouter();
   return (
     <>
       <div className="navbar bg-slate-300 h-20">
@@ -53,16 +55,48 @@ const Navbar = () => {
         </div>
         <div className="navbar-start hidden lg:block md:block">
           <Link href="/">
-            <a className="btn btn-ghost normal-case text-xl">Home</a>
+            <a
+              className={
+                router.pathname == "/"
+                  ? `text-green-600 btn btn-ghost btn-outline normal-case text-xl`
+                  : "btn btn-ghost normal-case text-xl"
+              }
+            >
+              Home
+            </a>
           </Link>
           <Link href="/blogs">
-            <a className="btn btn-ghost normal-case text-xl">Blogs</a>
+            <a
+              className={
+                router.pathname == "/blogs"
+                  ? `text-green-600 btn btn-ghost btn-outline normal-case text-xl`
+                  : "btn btn-ghost normal-case text-xl"
+              }
+            >
+              Blogs
+            </a>
           </Link>
           <Link href="/about">
-            <a className="btn btn-ghost normal-case text-xl">About</a>
+            <a
+              className={
+                router.pathname == "/about"
+                  ? `text-green-600 btn btn-outline btn-ghost normal-case text-xl`
+                  : "btn btn-ghost normal-case text-xl"
+              }
+            >
+              About
+            </a>
           </Link>
           <Link href="/contact">
-            <a className="btn btn-ghost normal-case text-xl">Contact</a>
+            <a
+              className={
+                router.pathname == "/contact"
+                  ? `text-green-600 btn btn-outline btn-ghost normal-case text-xl`
+                  : "btn btn-ghost normal-case text-xl"
+              }
+            >
+              Contact
+            </a>
           </Link>
         </div>
         <div className="flex-none gap-2">
