@@ -1,4 +1,5 @@
-import Navbar from '../components/Navbar';
+import Footer from '../components/shared/Footer';
+import Navbar from '../components/shared/Navbar';
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -6,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
+      <Footer/>
     </>
   );
 }

@@ -51,7 +51,7 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
-          <div className="text-3xl text-green-800 font-bold">Tech Blogs</div>
+          <div className="text-3xl text-green-600 font-semibold">Tech Blogs</div>
         </div>
         <div className="navbar-start hidden lg:block md:block">
           <Link href="/">
@@ -69,8 +69,8 @@ const Navbar = () => {
             <a
               className={
                 router.pathname == "/blogs"
-                  ? `text-green-600 btn btn-ghost btn-outline normal-case text-xl`
-                  : "btn btn-ghost normal-case text-xl"
+                  ? `text-green-600 btn btn-ghost btn-outline normal-case text-lg`
+                  : "btn btn-ghost normal-case text-lg"
               }
             >
               Blogs
@@ -80,8 +80,8 @@ const Navbar = () => {
             <a
               className={
                 router.pathname == "/about"
-                  ? `text-green-600 btn btn-outline btn-ghost normal-case text-xl`
-                  : "btn btn-ghost normal-case text-xl"
+                  ? `text-green-600 btn btn-outline btn-ghost normal-case text-lg`
+                  : "btn btn-ghost normal-case text-lg"
               }
             >
               About
@@ -91,8 +91,8 @@ const Navbar = () => {
             <a
               className={
                 router.pathname == "/contact"
-                  ? `text-green-600 btn btn-outline btn-ghost normal-case text-xl`
-                  : "btn btn-ghost normal-case text-xl"
+                  ? `text-green-600 btn btn-outline btn-ghost normal-case text-lg`
+                  : "btn btn-ghost normal-case text-lg"
               }
             >
               Contact
@@ -127,9 +127,6 @@ const Navbar = () => {
                   Profile
                   <span className="badge">New</span>
                 </a>
-              </li>
-              <li>
-                <a>Settings</a>
               </li>
               <li>
                 <a>Logout</a>
